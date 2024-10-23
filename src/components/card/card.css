@@ -1,0 +1,115 @@
+.card {
+  width: 471;
+  height: 279;
+  position: relative;
+
+  display: grid; 
+  gap:  5px;
+
+  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-columns: auto auto 1fr 0.2fr;
+
+  grid-template-areas: 
+	'label0 label1 label1 label5'
+	'label0 label2 label2 label2'
+	'label0 label3 label3 label3'
+	'label0 label4 label4 label4'
+	'label0 label6 label6 label6'; 
+}
+
+.card:hover{
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.title {
+  margin: 0;
+  max-width: 220px;
+  height: auto;
+  grid-area: label1;
+}
+
+.date {
+  color: grey;
+  grid-area: label2;
+}
+
+.genres{
+  grid-area: label3;
+}
+
+.description {
+  overflow: hidden;
+  margin: 0;
+  grid-area: label4;
+}
+
+.card img {
+  width: 186px;
+  grid-area: label0;
+}
+
+.card-popularity-count {
+  position: absolute;
+  right: 5px;
+  top: 5px; 
+  display: flex;
+  border: 3px solid #E90000;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  grid-area: label5;
+}
+
+.card-popularity-count.orange {
+  border-color: #E97E00;
+}
+
+.card-popularity-count.yellow {
+  border-color: #E9D100;
+}
+
+.card-popularity-count.green {
+  border-color: #66E900;
+}
+
+.ant-rate{
+  height: 100%;
+  align-content: end;
+  grid-area: label6;
+}
+
+@media (max-width: 540px){
+
+  .card {
+    min-width: 388;
+    min-height: 245;
+    width: 388;
+    height: 245;
+    padding: 5px;
+
+    display: grid; 
+    gap: 5px;
+    
+    grid-template-areas: 
+    'label0 label1 label1 label5'
+    'label0 label2 label2 label2'
+    'label0 label3 label3 label3'
+    'label4 label4 label4 label4'
+    '. . label6 label6'; 
+  }
+
+  .card img {
+    width: 60px;
+    height: 91px;
+  }
+
+  .ant-rate{
+    display: flex;
+    justify-content: end;
+  }
+
+}

@@ -1,0 +1,39 @@
+.section-movies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(201, 199, 199);
+}
+
+.movies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1100px;
+    min-height: 400px;
+    background-color: white;
+    padding: 0 20px;
+    /* width: 100vh; */
+    gap:10px;
+}
+
+.spin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+
+@media (max-width: 540px){
+    .movies{
+        width: auto;
+        padding: 0;
+        /* max-width: 1100px; */
+
+    }
+}
+

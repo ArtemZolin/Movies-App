@@ -1,0 +1,15 @@
+.genres {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.genre {
+  border: 1px solid rgb(197, 197, 197);
+  padding: 0 3px;
+  background-color: aliceblue;
+  color: grey;
+  margin: 0;
+  height: 20;
+  box-sizing: border-box;
+}
