@@ -117,8 +117,8 @@ export default class App extends Component {
             });
           }
         })
-        .catch((e) => {
-          console.log(e)
+        .catch(() => {
+          // console.log(e)
           this.setState({
             isLoading: false,
             notFound: false,
@@ -155,7 +155,7 @@ export default class App extends Component {
         // console.log('getRatedMovies item= ',item)
         // console.log('getRatedMovies  guestSessionId =', guestSessionId)
         // console.log("this.state= ",this.state)
-        console.log("item.results.length= ",item.results.length)
+        // console.log("item.results.length= ",item.results.length)
         this.setState({
           totalPages: item.total_pages,
           numberPage,
